@@ -1,6 +1,7 @@
 <script lang="ts">
 
 import { onMount } from "svelte";
+import { asset } from "$app/paths";
 import ColorPicker from "#lib/components/ColorPicker.svelte";
 import ImageSlot from "#lib/components/ImageSlot.svelte";
 import { applyValueGuide } from "#lib/image/valueGuide.ts";
@@ -36,7 +37,7 @@ function clampLevels(n: number) {
 }
 
 onMount(async () => {
-    const response = await fetch('/default.jpeg');
+    const response = await fetch(asset('default.jpeg'));
     const blob = await response.blob();
     await handleFileSelected(new File([blob], 'default.jpeg', { type: blob.type }));
 });
