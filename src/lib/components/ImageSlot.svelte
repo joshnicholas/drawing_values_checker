@@ -35,7 +35,6 @@ function handleChange(e: Event) {
 	bind:this={fileInput}
 	type="file"
 	accept="image/*"
-	capture="environment"
 	onchange={handleChange}
 	hidden
 />
