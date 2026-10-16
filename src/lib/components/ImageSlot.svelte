@@ -53,6 +53,13 @@ function handleChange(e: Event) {
 		cursor: pointer;
 		overflow: hidden;
 	}
+	@media (max-width: 480px) {
+		.image-slot {
+			aspect-ratio: auto;
+			flex: 1;
+			min-height: 0;
+		}
+	}
 	.placeholder {
 		display: flex;
 		flex-direction: column;

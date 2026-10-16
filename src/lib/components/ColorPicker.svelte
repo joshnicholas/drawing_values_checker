@@ -38,7 +38,7 @@ $effect(() => {
                 <button
                     type='button'
                     class='preset'
-                    style:backround={preset}
+                    style:background={preset}
                     aria-label = "Set {label} to {preset}"
                     onclick={() => (value = preset)}
                 ></button>
